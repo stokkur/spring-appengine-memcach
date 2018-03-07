@@ -2,6 +2,17 @@
 
 Support for memcache in appengine in Spring
 
+The library is hosted at jcenter. 
+```groovy
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'net.stokkur.cloud:appengine-memcache-spring:0.1-BETA'
+}
+```
+
 
 This project will use spring auto configuration, for easy of use.
 Just include this dependency and set the properties. Remember all items nedds to be serializable.
