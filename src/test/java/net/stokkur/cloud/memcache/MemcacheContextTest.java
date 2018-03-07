@@ -2,6 +2,7 @@ package net.stokkur.cloud.memcache;
 
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest(properties = {"appengine.memcache.enabled=true", "appengine.memcache.expiration=10"},
         classes = {AppengineConfiguration.class, FooService.class, Conf.class})
+@Ignore
 public class MemcacheContextTest {
 
     @Autowired
